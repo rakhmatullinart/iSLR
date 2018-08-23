@@ -571,9 +571,9 @@
                                 </table></div></div>");
                             
                                 
-                            echo "<div class='row text-center'><div class='selection'><button class = 'myButton' type='submit' name = 'reset' onclick = 'index.php'>";
-                                echo "<i class = 'ion-refresh'> </i> Reset</div></div>";
-                            echo "</button>";
+                            echo "<div class='row text-center'><div class='container'><button class = 'myButton' type='submit' name = 'reset' onclick = 'index.php'>";
+                                echo "<i class = 'ion-refresh'> </i> Reset</button></div></div>";
+                            
                         }
                     
                     
@@ -686,10 +686,10 @@
                             echo "<div class='formref col-md-12 text-center'><div class='head'><b> Choose the synonyms </b></div></div>";
                             
                             echo "<form id = 'selectForm' method = 'post'>";
-                            echo "<div class='row'><div class='container'><div class='refreshb'><button name = 'refresh' class='button2 positioned-right'> <i class = 'ion-refresh'> </i> Refresh </button></div></div></div>";
+                            echo "<div class='row text-center'><div class='container'><button name = 'refresh' class='myButton'> <i class = 'ion-refresh'> </i> Refresh </button></div></div>";
                             echo "<br>";
                             
-                            echo "<div class='row selection'><select name = 'selectsort'>";
+                            echo "<div class='row text-center'><select name = 'selectsort'>";
                             echo "<option selected disabled text-center> Sort synonyms by </option>";
                             echo "<option value = 0> relevance meaning </option>";
                             echo "<option value = 1> alphabetical order </option>";

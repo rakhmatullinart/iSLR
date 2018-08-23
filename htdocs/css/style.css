@@ -26,27 +26,16 @@ body {
   color: #fff;
   text-decoration: none;
   font-size: 1em;
-  margin: 30 15px;
+  margin: 10px 15px 0 15px;
   border: 0;
 }
-.selection{
-    margin-left: 190px;
-    z-index: 9;
-    position: relative;
-    margin-bottom: -24px;
-/*    display: inline-block;*/
+    
+/*
 }
 .selection .myButton{
     margin-top: 10px;
 }
-
-select {
-                
-                color: #d3d3d3;
-                background: #302a39;
-                border: none;
-                outline: none;
-            }
+*/
 
 .done .myButton{
     margin-right: 10px;
@@ -54,9 +43,7 @@ select {
 }
 
 .refreshb{
-    margin-bottom: -150px;
-    text-align: right;
-    margin-right: 9px;
+    
 }
 
 .positioned-right {
@@ -1985,39 +1972,6 @@ input[type="text"] {
 .js .animate-box {
   opacity: 0; }
 
-.button2 {
-                
-                 display: inline-block;
-                 padding: 0.35em 1.2em;
-                 border: 0.1em solid #FFFFFF;
-                 margin: 0 0.3em 0.3em 0;
-                 border-radius: 0.12em;
-                 box-sizing: border-box;
-                 text-decoration: none;
-                 font-family: 'Roboto' ,sans-serif;
-                 font-weight: 300;
-                 color: #d3d3d3;
-                 background: #302a39;
-                 text-align: center;
-                 transition: all 0.2s;
-                 border-radius: 10px;
-            }
-            
-             .button2:hover {
-                 
-                 color: white;
-                 border-radius: 10px;
-             }
-             
-            @media all and (max-width:30em) {
-                
-                 .button2 {
-                     
-                    display:block;
-                    margin:0.4em auto;
-                 }
-                
-            }
 .loader,
         .loader:after {
             border-radius: 50%;
