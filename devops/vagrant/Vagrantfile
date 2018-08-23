@@ -27,10 +27,10 @@ end
 Vagrant.configure("2") do |config|
 
     config.vm.provider :virtualbox do |v|
-        v.name = "hellovagrant.dev"
+        v.name = "islr.dev"
         v.customize [
             "modifyvm", :id,
-            "--name", "hellovagrant.dev",
+            "--name", "islr.dev",
             "--memory", 512,
             "--natdnshostresolver1", "on",
             "--cpus", 1,
@@ -44,10 +44,10 @@ Vagrant.configure("2") do |config|
     config.hostmanager.manage_guest = true
     config.hostmanager.ignore_private_ip = false
     config.hostmanager.include_offline = true
-    config.vm.define 'hellovagrant.dev' do |node|
-        node.vm.hostname = 'hellovagrant.dev'
+    config.vm.define 'islr.dev' do |node|
+        node.vm.hostname = 'islr.dev'
         node.vm.network :private_network, ip: '192.168.31.10'
-        node.hostmanager.aliases = %w(www.hellovagrant.dev)
+        node.hostmanager.aliases = %w(www.islr.dev)
     end
     
     config.vm.network :private_network, ip: "192.168.31.10"
@@ -62,7 +62,7 @@ Vagrant.configure("2") do |config|
             ansible.limit = 'all'
         end
     else
-        config.vm.provision :shell, path: "../ansible/windows.sh", args: ["hellovagrant.dev"]
+        config.vm.provision :shell, path: "../ansible/windows.sh", args: ["islr.dev"]
     end
 
     config.vm.synced_folder "../../", "/vagrant", :nfs => { :mount_options => ["dmode=777","fmode=777"] }

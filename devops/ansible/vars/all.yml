@@ -9,15 +9,15 @@ apache:
     servername: hellovagrant.dev
 mysql:
     install: '1'
-    root_password: 123456
+    root_password: conass
     database: db
     user: db
-    password: '123456'
-    dump: ''
+    password: 'conass'
+    dump: 'htdocs/data-base.sql'
 php:
     install: '1'
     ppa: php
-    packages: [php7.0-mysql,php7.0-dev,php7.0-curl,php7.0-json,libapache2-mod-php7.0,php7.0-mbstring,php7.0-mcrypt,php7.0-soap,php7.0-gd]
+    packages: [php-mysql,php7.0-dev,php-curl,php7.0-json,libapache2-mod-php7.0,php7.0-mbstring,php7.0-mcrypt,php7.0-soap,php7.0-gd]
 composer:
     install: '1'
 git:
